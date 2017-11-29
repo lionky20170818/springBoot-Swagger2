@@ -98,6 +98,30 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 		</dependency>
+		<!--feign-->
+		<dependency>
+			<groupId>com.netflix.feign</groupId>
+			<artifactId>feign-gson</artifactId>
+			<version>8.18.0</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>feign-core</artifactId>
+					<groupId>com.netflix.feign</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+			<version>1.3.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.feign</groupId>
+			<artifactId>feign-jackson</artifactId>
+			<version>8.18.0</version>
+		</dependency>
+
 
 	</dependencies>
 
